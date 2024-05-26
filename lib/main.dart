@@ -41,8 +41,8 @@ class _WebSocketScreenState extends State<WebSocketScreen> {
       body: StreamBuilder(
         stream: channel.stream,
         builder: (context, snapshot) {
-          Color bgColor = Colors.grey; // Default background color
-          String message = 'Waiting for data...'; // Default text message
+          Color bgColor = Colors.grey;
+          String message = 'Waiting for data...';
 
           if (snapshot.hasData) {
             final data = snapshot.data.toString();
